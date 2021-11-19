@@ -1,6 +1,6 @@
-
 <html>
 <body>
+
 
 <svg height="200" width="1500">
   <defs>
@@ -26,29 +26,13 @@
 <p id="demo"></p>
 
 <script>
-
-
+function myFunction() {
   var text;
   var fruits = document.getElementById("myInput").value;
 
   switch(fruits) {
     case "a":
-      text="please choose a interest from the following: i. game programming(gp), ii. game testing(gt), iii.directing(di), iv. script writing(sw)";
-      break;
-      case "game programming":
-      text="jobs and careers are: game developer";
-      break;
-      case "game testing":
-      text="jobs and careers are: game ambassador, game reviewer, research on gaming effecting mind";
-          break;
-        case "directing":
-          text="jobs and careers are: game director, writer, world builder, concept artist";
-          break;
-        case "script writing":
-          text="jobs and careers are:dialogue writer, book to game and movie to game adapter, game publisher and buyer.";
-     
-      
-      
+      text = "please choose a interest from the following:a. game programming, b. game testing, c.directing, d. script writing";
     break;
     case "b":
     text = "please choose an interest from the following: a.travelling, b.art, c.programming, d.business";
