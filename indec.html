@@ -1,6 +1,7 @@
+<!DOCTYPE html>
+
 <html>
 <body>
-
 
 <svg height="200" width="1500">
   <defs>
@@ -27,12 +28,31 @@
 
 <script>
 function myFunction() {
+  <style> 
+@font-face {
+   font-family: myFirstFont;
+   src: url(sansation_light.woff);
+}
+
+@font-face {
+   font-family: myFirstFont;
+   src: url(sansation_bold.woff);
+   font-weight: bold;
+}
+
+* {
+   font-family: myFirstFont;
+}
+</style>
+</head>
+<body>
+
   var text;
   var fruits = document.getElementById("myInput").value;
 
   switch(fruits) {
     case "a":
-      text="please choose a interest from the following: i. game programming(gp), ii. game testing(gt), iii.directing(di), iv. script writing(sw)";
+      text=<h1>please choose a interest from the following: i. game programming(gp), ii. game testing(gt), iii.directing(di), iv. script writing(sw)</h1>;
       break;
       case "game programming":
       text="jobs and careers are: game developer";
