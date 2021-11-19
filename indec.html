@@ -28,18 +28,22 @@
 <script>
 function myFunction() {
   var text;
+  var text2;
   var fruits = document.getElementById("myInput").value;
 
   switch(fruits) {
     case "a" :
       text = "please choose a interest from the following: 1. game programming, 2. game testing, 3.directing, 4. script writing";
-      var x = prompt("Enter your choice", "0");
-      var y;
-       if(x==1)
-       {y="the jobs and courses: make engines for game creators, (such as unreal engine company, unity), create coding for game movements and particles(blender 3d)".}
-       else
-        { y="none"}
-       
+      switch(text2) {
+        case 1:
+          text="the job and courses are: game developer(sony,microsoft, indie company) , game engine developer -make puppet coding to help creators create easily(unreal, unity), creator of game technology( intel, google, sony, capcom)";
+          break;
+        case 2:
+          text="the job and courses are: gaming ambassador(pewdiepie, ign, gamespot, radbrad), game tester, publishing studios (bandai namco, activision, google), game modding and limiting";
+          break;
+        default:
+          text="none";
+      }
     break;
     case "b":
     text = "please choose an interest from the following: a.travelling, b.art, c.programming, d.business";
