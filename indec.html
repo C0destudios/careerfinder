@@ -31,8 +31,15 @@ function myFunction() {
   var fruits = document.getElementById("myInput").value;
 
   switch(fruits) {
-    case "a":
-      text = "please choose a interest from the following:a. game programming, b. game testing, c.directing, d. script writing";
+    case "a" :
+      text = "please choose a interest from the following: 1. game programming, 2. game testing, 3.directing, 4. script writing";
+      var x = prompt("Enter your choice", "0");
+      var y;
+       if(x==1)
+       {y="the jobs and courses: make engines for game creators, (such as unreal engine company, unity), create coding for game movements and particles(blender 3d)".}
+       else
+        { y="none"}
+       
     break;
     case "b":
     text = "please choose an interest from the following: a.travelling, b.art, c.programming, d.business";
