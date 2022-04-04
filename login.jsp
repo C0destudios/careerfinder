@@ -5,7 +5,7 @@
 
 String uname= request.getParameter("uname");
 String password=request.getParameter("pass");
-if(uname.equals("Silver") && password.equals("123"))
+if(uname.equals("silver") && password.equals("123"))
 {
 	
 	out.println("login success");
